@@ -1,0 +1,71 @@
+<!--
+  #####################################################
+
+   ______                  ______ _                
+ |  ____|                |  ____| |               
+ | |__ ___  _ __ _____  _| |__  | | __ _ _ __ ___ 
+ |  __/ _ \| '__/ _ \ \/ /  __| | |/ _` | '__/ _ \
+ | | | (_) | | |  __/>  <| |    | | (_| | | |  __/
+ |_|  \___/|_|  \___/_/\_\_|    |_|\__,_|_|  \___|
+ 
+                                                  
+  ***Developed by: Ashwet Harde***
+
+  
+  ***ForexFlare***
+  Bringing precision and ease to currency conversion
+  #####################################################
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForexFlare - Currency Converter</title>
+    <link rel="icon" type="image/x-icon" href="exchange.png" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Converter</h2>
+      <form>
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input value="1" type="text" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img id="from-flag" src="https://flagsapi.com/AE/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img id="to-flag" src="https://flagsapi.com/AE/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1 AED = 1.00 AED</div>
+        <button type="button" id="convert-btn">Get Exchange Rate</button>
+        <footer>
+          <p>&copy; 2024 ForexFlare. All rights reserved.</p>
+        </footer>
+      </form>
+    </div>
+    <script src="Codes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

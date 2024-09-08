@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  padding: 2%;
+}
+
+.container {
+  background-color: #e0e0e0;
+  padding: 2rem;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 55vh;
+  box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff;
+  max-width: 100%;
+}
+
+/* Typography */
+h2 {
+  text-align: center;
+  color: #585858;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem; /* Adjusted for better visibility */
+}
+
+/* Form */
+form {
+  margin: 2rem 0 1rem 0;
+  color: #585858
+}
+
+/* Form elements */
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  background-color: #e0e0e0;
+  color: #585858;
+  font-size: 1rem;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  padding-left: 0.75rem;
+}
+
+form input {
+  height: 3rem;
+}
+
+/* Dropdown */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #585858;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+/* Select Container */
+.select-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.select-container img {
+  max-width: 2rem;
+  margin-right: 0.5rem;
+}
+
+/* Message */
+.msg {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #585858;
+}
+
+/* Button */
+form button {
+  height: 3rem;
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 1.15rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form input,
+  form button {
+    font-size: 0.9rem;
+    height: 2.5rem;
+  }
+
+  .msg {
+    font-size: 1rem;
+  }
+
+  .dropdown i {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  form input,
+  form button {
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+
+  .msg {
+    font-size: 0.9rem;
+  }
+
+  .dropdown i {
+    font-size: 1rem;
+  }
+}
+
+
+/* Existing CSS... */
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  color: #666;
+  font-size: 0.8rem;
+}
